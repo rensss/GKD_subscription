@@ -7,7 +7,7 @@ export default defineGkdSubscription({
   id: 92384712947,
   name: 'Subscription',
   version: 0,
-  author: 'author',
+  author: 'rensss',
   checkUpdateUrl: './gkd.version.json5',
   supportUri: 'https://github.com/gkd-kit/subscription-template',
   categories,
