@@ -18,5 +18,33 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '首页-立即签到',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      rules: [
+        {
+          activityIds: 'com.htinns.reactnative.v2.RNContainerActivity',
+          matches: ['[text="立即签到"]'],
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '会员-签到',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      rules: [
+        {
+          activityIds: 'com.huazhu.main.RnMainActivity',
+          matches: ['[text="签到"]'],
+        },
+      ],
+    },
   ],
 });
