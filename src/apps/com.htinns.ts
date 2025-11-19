@@ -24,7 +24,7 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'app',
+      resetMatch: 'activity',
       rules: [
         {
           activityIds: 'com.htinns.reactnative.v2.RNContainerActivity',
@@ -38,7 +38,7 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'app',
+      resetMatch: 'activity',
       rules: [
         {
           activityIds: 'com.huazhu.main.RnMainActivity',
