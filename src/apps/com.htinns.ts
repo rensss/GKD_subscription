@@ -27,7 +27,7 @@ export default defineGkdApp({
       resetMatch: 'match',
       rules: [
         {
-          activityIds: '.reactnative.v2.RNContainerActivity',
+          activityIds: 'com.huazhu.reactnative.v2.RNContainerActivity',
           matches: ['[text="立即签到"]'],
         },
       ],
@@ -38,7 +38,7 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
+      resetMatch: 'app',
       rules: [
         {
           activityIds: 'com.huazhu.main.RnMainActivity',
