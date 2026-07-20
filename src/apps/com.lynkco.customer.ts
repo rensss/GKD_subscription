@@ -8,22 +8,23 @@ export default defineGkdApp({
       key: 1,
       name: '签到有礼',
       fastQuery: true,
-      matchTime: 15000,
-      forcedTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',
       rules: [
         {
           key: 0,
           name: '进入签到详情',
-          matches: '[text="签到有礼"]',
+          activityIds: 'com.geely.lynkco.main.activity.LynkCoTabMainActivity',
+          matches: '[vid="signIn"][text="签到有礼"][visibleToUser=true]',
         },
         {
           key: 1,
           name: '立即签到',
           activityIds:
             'com.geely.lynkco.weex.core.activity.WeexAppHostActivity',
-          matches: '[text="立即签到"]',
+          matchTime: 60000,
+          forcedTime: 60000,
+          matches: '[text="立即签到"][visibleToUser=true]',
         },
       ],
     },
