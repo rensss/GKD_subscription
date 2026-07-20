@@ -21,7 +21,6 @@ export default defineGkdApp({
         {
           key: 1,
           name: '立即签到',
-          preKeys: [0],
           activityIds:
             'com.geely.lynkco.weex.core.activity.WeexAppHostActivity',
           matches: '[text="立即签到"]',
