@@ -23,6 +23,7 @@ export default defineGkdApp({
           name: '立即签到',
           activityIds:
             'com.geely.lynkco.weex.core.activity.WeexAppHostActivity',
+          fastQuery: false,
           matchTime: 60000,
           forcedTime: 60000,
           matchRoot: true,
