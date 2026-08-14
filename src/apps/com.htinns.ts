@@ -46,5 +46,23 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '首页-广告关闭',
+      fastQuery: false,
+      matchRoot: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'match',
+      rules: [
+        {
+          activityIds: 'com.huazhu.main.RnMainActivity',
+          action: 'click',
+          matches: [
+            '[childCount=2] > @[clickable=true][childCount=1][index=parent.childCount.minus(1)][bottom=parent.bottom][left=parent.left.plus(parent.width.minus(width).div(2))] > ImageView',
+          ],
+        },
+      ],
+    },
   ],
 });
