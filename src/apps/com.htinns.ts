@@ -29,7 +29,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
-          activityIds: '.main.RnMainActivity',
+          activityIds: 'com.huazhu.main.RnMainActivity',
           action: 'clickCenter',
           actionMaximum: 1,
           matches: [
