@@ -32,7 +32,7 @@ export default defineGkdApp({
           activityIds: 'com.huazhu.main.RnMainActivity',
           action: 'clickCenter',
           actionMaximum: 1,
-          matches: [
+          anyMatches: [
             '[desc="签到"][clickable=true][visibleToUser=true]',
             '[desc="会员签到"][clickable=true][visibleToUser=true]',
           ],
