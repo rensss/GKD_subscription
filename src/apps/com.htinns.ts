@@ -32,7 +32,10 @@ export default defineGkdApp({
           activityIds: '.main.RnMainActivity',
           action: 'clickCenter',
           actionMaximum: 1,
-          matches: ['[desc="会员签到"][clickable=true]'],
+          matches: [
+            '[desc="签到"][clickable=true][visibleToUser=true]',
+            '[desc="会员签到"][clickable=true][visibleToUser=true]',
+          ],
         },
         {
           key: 2,
