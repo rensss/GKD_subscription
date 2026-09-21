@@ -25,8 +25,10 @@ export default defineGkdApp({
         {
           key: 1,
           name: '立即签到',
-          activityIds:
+          activityIds: [
             'com.geely.lynkco.weex.core.activity.WeexAppHostActivity',
+            'com.sweet.common.pack.SWCordovaActivity',
+          ],
           fastQuery: false,
           matchTime: 60000,
           forcedTime: 60000,
