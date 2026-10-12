@@ -45,7 +45,7 @@ export default defineGkdApp({
           action: 'clickCenter',
           actionMaximum: 1,
           matches: ['[desc^="签到"][clickable=true][visibleToUser=true]'],
-          excludeMatches: ['[desc*="今日已签"]'],
+          excludeMatches: ['[text*="今日已签"]', '[desc*="今日已签"]'],
         },
         {
           key: 3,
