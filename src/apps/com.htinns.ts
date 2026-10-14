@@ -54,7 +54,10 @@ export default defineGkdApp({
           action: 'clickCenter',
           actionDelay: 1000,
           actionMaximum: 1,
-          anyMatches: ['[text="立即签到"]', '[text="签到开盲盒"]'],
+          anyMatches: [
+            '@[clickable=true] > [text="立即签到"]',
+            '@[clickable=true] > [text="签到开盲盒"]',
+          ],
         },
         {
           key: 4,
