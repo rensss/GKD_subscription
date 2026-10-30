@@ -12,6 +12,22 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          key: 2,
+          name: '进入我的页面',
+          activityIds: 'com.geely.lynkco.main.activity.LynkCoTabMainActivity',
+          fastQuery: false,
+          matchTime: 60000,
+          forcedTime: 60000,
+          matchRoot: true,
+          actionMaximum: 1,
+          action: 'clickCenter',
+          anyMatches: [
+            '[text="我的"][visibleToUser=true]',
+            '[desc="我的"][visibleToUser=true]',
+          ],
+          excludeMatches: '[vid="signIn"][text="签到有礼"][visibleToUser=true]',
+        },
+        {
           key: 0,
           name: '进入签到详情',
           activityIds: 'com.geely.lynkco.main.activity.LynkCoTabMainActivity',

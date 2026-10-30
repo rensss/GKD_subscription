@@ -37,6 +37,8 @@ export default defineGkdApp({
           matches: ['[desc="会员"][clickable=true][visibleToUser=true]'],
           excludeMatches: [
             '[desc^="签到"][clickable=true][visibleToUser=true]',
+            '[text*="今日已签"]',
+            '[desc*="今日已签"]',
           ],
         },
         {
@@ -45,7 +47,7 @@ export default defineGkdApp({
           activityIds: 'com.huazhu.main.RnMainActivity',
           action: 'clickCenter',
           actionMaximum: 1,
-          resetMatch: 'match',
+          resetMatch: 'app',
           matches: ['[desc^="签到"][clickable=true][visibleToUser=true]'],
           excludeMatches: ['[text*="今日已签"]', '[desc*="今日已签"]'],
         },
@@ -56,10 +58,10 @@ export default defineGkdApp({
           action: 'clickCenter',
           actionDelay: 1000,
           actionMaximum: 1,
-          resetMatch: 'match',
+          resetMatch: 'app',
           anyMatches: [
-            '@[clickable=true] > [text="立即签到"]',
-            '@[clickable=true] > [text="签到开盲盒"]',
+            '[text="立即签到"][visibleToUser=true]',
+            '[text="签到开盲盒"][visibleToUser=true]',
           ],
         },
         {
@@ -68,7 +70,7 @@ export default defineGkdApp({
           activityIds: '.reactnative.v2.RNContainerActivity',
           action: 'clickCenter',
           actionMaximum: 1,
-          resetMatch: 'match',
+          resetMatch: 'app',
           matches: ['[text="开心收下"]'],
         },
       ],
