@@ -46,6 +46,7 @@ export default defineGkdApp({
           name: '进入签到详情',
           activityIds: 'com.huazhu.main.RnMainActivity',
           action: 'clickCenter',
+          actionDelay: 1000,
           actionMaximum: 1,
           resetMatch: 'app',
           matches: ['[desc^="签到"][clickable=true][visibleToUser=true]'],
